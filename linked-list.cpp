@@ -62,3 +62,13 @@ Node* delPtr = iPtr->link;//step 3a
 iPtr->link = delPtr->link; //steb 3b
    delete delPtr;
 
+
+//print linked-list
+
+Node* iPtr = frontPtr;
+
+while (iPtr != nullptr )
+{
+   cout<<iPtr->data;
+   iPtr = iPtr->link;
+}
