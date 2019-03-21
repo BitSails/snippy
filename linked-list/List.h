@@ -5,6 +5,9 @@ class List
 {
    public://operations
     
+     //Destructor
+     ~List();
+    
      //insert element at k-th position
      void insertAt(int element, int k);
       

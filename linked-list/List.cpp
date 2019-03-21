@@ -9,7 +9,12 @@ class List::Node//inner (self-referential) class
 
 };//self-referential class
 
+List::~List()//remove any nodess  iinnn  
+{
+  clear();
 
+}
+    
 void List::insertAt(int val, int k)
 {
 Node* newPtr = new Node{val};//Step 1
@@ -67,7 +72,7 @@ iPtr->link = delPtr->link; //steb 3b
 int getAt(int k)
 {
 
-
+//see lab
 }  
 
 
@@ -83,9 +88,9 @@ void clear()
 Node* iPtr = frontPtr;
 while (iPtr != nullptr)
 {
-  frontPtr = frontPtr->link;
-  delete iPtr;
-  iPtr = frontPtr;
+  frontPtr = frontPtr->link;// advance front pointer
+  delete iPtr;//delete first node
+  iPtr = frontPtr;//continue traversing
 } 
 
 
